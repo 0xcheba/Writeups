@@ -34,9 +34,9 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    The core processing loop splits each line of the song using the `;` character:
 
-```python
-for line in song_lines[lip].split(';'):
-```
+   ```python
+   for line in song_lines[lip].split(';'):
+   ```
 
 
 
@@ -44,12 +44,12 @@ for line in song_lines[lip].split(';'):
 
    The program provides a single location for user input:
 
-```python
-elif re.match(r"CROWD.*", line):
-    crowd = input('Crowd: ')
-    song_lines[lip] = 'Crowd: ' + crowd
-    lip += 1
-```
+   ```python
+   elif re.match(r"CROWD.*", line):
+       crowd = input('Crowd: ')
+       song_lines[lip] = 'Crowd: ' + crowd
+       lip += 1
+   ```
 
 
 
@@ -57,15 +57,15 @@ elif re.match(r"CROWD.*", line):
 
    Any string submitted by the user is formatted as `Crowd: <user_input>` and replaces the placeholder line `CROWD (Singalong here!);`:
 
-```
-[REFRAIN]
-We’re flag hunters in the ether, lighting up the grid,
-No puzzle too dark, no challenge too hid.
-With every exploit we trigger, every byte we decrypt,
-We’re chasing that victory, and we’ll never quit.
-CROWD (Singalong here!);
-RETURN
-```
+   ```
+   [REFRAIN]
+   We’re flag hunters in the ether, lighting up the grid,
+   No puzzle too dark, no challenge too hid.
+   With every exploit we trigger, every byte we decrypt,
+   We’re chasing that victory, and we’ll never quit.
+   CROWD (Singalong here!);
+   RETURN
+   ```
 
 
 
@@ -125,42 +125,44 @@ RETURN
 
    When `RETURN 0` is processed, `lip` is set to 0, redirecting the execution to the first line — which contains the hidden flag.
 
-```
-Command line wizards, we’re starting it right,
-Spawning shells in the terminal, hacking all night.
-Scripts and searches, grep through the void,
-Every keystroke, we're a cypher's envoy.
-Brute force the lock or craft that regex,
-Flag on the horizon, what challenge is next?
+   ```
+   Command line wizards, we’re starting it right,
+   Spawning shells in the terminal, hacking all night.
+   Scripts and searches, grep through the void,
+   Every keystroke, we're a cypher's envoy.
+   Brute force the lock or craft that regex,
+   Flag on the horizon, what challenge is next?
+   
+   We’re flag hunters in the ether, lighting up the grid,
+   No puzzle too dark, no challenge too hid.
+   With every exploit we trigger, every byte we decrypt,
+   We’re chasing that victory, and we’ll never quit.
+   Crowd: ;RETURN 0
+   
+   Echoes in memory, packets in trace,
+   Digging through the remnants to uncover with haste.
+   Hex and headers, carving out clues,
+   Resurrect the hidden, it's forensics we choose.
+   Disk dumps and packet dumps, follow the trail,
+   Buried deep in the noise, but we will prevail.
+   
+   We’re flag hunters in the ether, lighting up the grid,
+   No puzzle too dark, no challenge too hid.
+   With every exploit we trigger, every byte we decrypt,
+   We’re chasing that victory, and we’ll never quit.
+   Crowd: 
+   Pico warriors rising, puzzles laid bare,
+   Solving each challenge with precision and flair.
+   With unity and skill, flags we deliver,
+   The ether’s ours to conquer, picoCTF{█████████████████████████}
+   
+   
+   [REFRAIN]
+   ^C
+   
+   ```
 
-We’re flag hunters in the ether, lighting up the grid,
-No puzzle too dark, no challenge too hid.
-With every exploit we trigger, every byte we decrypt,
-We’re chasing that victory, and we’ll never quit.
-Crowd: ;RETURN 0
 
-Echoes in memory, packets in trace,
-Digging through the remnants to uncover with haste.
-Hex and headers, carving out clues,
-Resurrect the hidden, it's forensics we choose.
-Disk dumps and packet dumps, follow the trail,
-Buried deep in the noise, but we will prevail.
-
-We’re flag hunters in the ether, lighting up the grid,
-No puzzle too dark, no challenge too hid.
-With every exploit we trigger, every byte we decrypt,
-We’re chasing that victory, and we’ll never quit.
-Crowd: 
-Pico warriors rising, puzzles laid bare,
-Solving each challenge with precision and flair.
-With unity and skill, flags we deliver,
-The ether’s ours to conquer, picoCTF{█████████████████████████}
-
-
-[REFRAIN]
-^C
-
-```
 
 
 
