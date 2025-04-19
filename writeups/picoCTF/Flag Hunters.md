@@ -34,19 +34,40 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    The core processing loop splits each line of the song using the `;` character:
 
-![](.\pics\flag_hunters0.png)
+```python
+for line in song_lines[lip].split(';'):
+```
+
+
 
 3. **Single entry point for user input**
 
    The program provides a single location for user input:
 
-![](.\pics\flag_hunters1.png)
+```python
+elif re.match(r"CROWD.*", line):
+    crowd = input('Crowd: ')
+    song_lines[lip] = 'Crowd: ' + crowd
+    lip += 1
+```
+
+
 
 4. **Input is embedded into the song text**
 
    Any string submitted by the user is formatted as `Crowd: <user_input>` and replaces the placeholder line `CROWD (Singalong here!);`:
 
-![](.\pics\flag_hunters2.png)
+```
+[REFRAIN]
+We’re flag hunters in the ether, lighting up the grid,
+No puzzle too dark, no challenge too hid.
+With every exploit we trigger, every byte we decrypt,
+We’re chasing that victory, and we’ll never quit.
+CROWD (Singalong here!);
+RETURN
+```
+
+
 
 5. **The **`lip` **variable is a line pointer**
 
@@ -56,7 +77,12 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    A line starting with `RETURN N` causes the `lip` variable to be updated with the line index `N`, altering the control flow.
 
-   ![](.\pics\flag_hunters3.png)
+   ```python
+   elif re.match(r"RETURN [0-9]+", line):
+       lip = int(line.split()[1])
+   ```
+
+
 
 
 
@@ -66,7 +92,24 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    There are lines containing the flag, but they are not reachable through the standard execution flow — because `lip` starts at a non-zero value and doesn’t naturally visit those lines.
 
-   ![](.\pics\flag_hunters4.png)
+   ```python
+   flag = open('flag.txt', 'r').read()
+   
+   secret_intro = \
+   '''Pico warriors rising, puzzles laid bare,
+   Solving each challenge with precision and flair.
+   With unity and skill, flags we deliver,
+   The ether’s ours to conquer, '''\
+   + flag + '\n'
+   
+   
+   song_flag_hunters = secret_intro +\
+   '''
+   
+   [REFRAIN]
+   ```
+
+   
 
 8. **Crafting the payload**
 
@@ -82,7 +125,44 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    When `RETURN 0` is processed, `lip` is set to 0, redirecting the execution to the first line — which contains the hidden flag.
 
-![](.\pics\flag_hunters5.jpg)
+```
+Command line wizards, we’re starting it right,
+Spawning shells in the terminal, hacking all night.
+Scripts and searches, grep through the void,
+Every keystroke, we're a cypher's envoy.
+Brute force the lock or craft that regex,
+Flag on the horizon, what challenge is next?
+
+We’re flag hunters in the ether, lighting up the grid,
+No puzzle too dark, no challenge too hid.
+With every exploit we trigger, every byte we decrypt,
+We’re chasing that victory, and we’ll never quit.
+Crowd: ;RETURN 0
+
+Echoes in memory, packets in trace,
+Digging through the remnants to uncover with haste.
+Hex and headers, carving out clues,
+Resurrect the hidden, it's forensics we choose.
+Disk dumps and packet dumps, follow the trail,
+Buried deep in the noise, but we will prevail.
+
+We’re flag hunters in the ether, lighting up the grid,
+No puzzle too dark, no challenge too hid.
+With every exploit we trigger, every byte we decrypt,
+We’re chasing that victory, and we’ll never quit.
+Crowd: 
+Pico warriors rising, puzzles laid bare,
+Solving each challenge with precision and flair.
+With unity and skill, flags we deliver,
+The ether’s ours to conquer, picoCTF{█████████████████████████}
+
+
+[REFRAIN]
+^C
+
+```
+
+
 
 ## **Conclusion**
 
