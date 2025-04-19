@@ -34,19 +34,19 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    The core processing loop splits each line of the song using the `;` character:
 
-![](C:\Users\FX517ZE\GitHub\writeups\picoCTF\pics\flag_hunters0.png)
+![](.\pics\flag_hunters0.png)
 
 3. **Single entry point for user input**
 
    The program provides a single location for user input:
 
-![](C:\Users\FX517ZE\GitHub\writeups\picoCTF\pics\flag_hunters1.png)
+![](.\pics\flag_hunters1.png)
 
 4. **Input is embedded into the song text**
 
    Any string submitted by the user is formatted as `Crowd: <user_input>` and replaces the placeholder line `CROWD (Singalong here!);`:
 
-![](C:\Users\FX517ZE\GitHub\writeups\picoCTF\pics\flag_hunters2.png)
+![](.\pics\flag_hunters2.png)
 
 5. **The **`lip` **variable is a line pointer**
 
@@ -56,7 +56,7 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    A line starting with `RETURN N` causes the `lip` variable to be updated with the line index `N`, altering the control flow.
 
-   ![](C:\Users\FX517ZE\GitHub\writeups\picoCTF\pics\flag_hunters3.png)
+   ![](.\pics\flag_hunters3.png)
 
 
 
@@ -66,7 +66,7 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    There are lines containing the flag, but they are not reachable through the standard execution flow — because `lip` starts at a non-zero value and doesn’t naturally visit those lines.
 
-   ![](C:\Users\FX517ZE\GitHub\writeups\picoCTF\pics\flag_hunters4.png)
+   ![](.\pics\flag_hunters4.png)
 
 8. **Crafting the payload**
 
@@ -82,8 +82,9 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
    When `RETURN 0` is processed, `lip` is set to 0, redirecting the execution to the first line — which contains the hidden flag.
 
-![](C:\Users\FX517ZE\GitHub\writeups\picoCTF\pics\flag_hunters5.jpg)
+![](.\pics\flag_hunters5.jpg)
 
 ## **Conclusion**
 
 By injecting `;RETURN 0` into the user input, we hijack the control flow to access restricted lines in the script, effectively bypassing program limitations and revealing the flag.
+
