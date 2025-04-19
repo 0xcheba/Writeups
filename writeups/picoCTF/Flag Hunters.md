@@ -69,7 +69,7 @@ Upon connecting, the server outputs lines from a song defined in the script. Aft
 
 
 
-5. **The **`lip` **variable is a line pointer**
+5. **The** `lip` **variable is a line pointer**
 
    The variable `lip` serves as a line counter — it points to the current line in song being executed in the script.
 
