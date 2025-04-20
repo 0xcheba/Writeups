@@ -17,13 +17,17 @@ This is a simple CrackMe for Linux x86_64. The goal is to find the correct seria
 
 First, I found a piece of code responsible for displaying messages:
 
-[[easyjerk0.png]]
+<p align="center">
+<img src="/resources/easyjerk0.png" alt="Piece of disassembly with output"/>
+</p>
 
 Here we can see the `check_serial` function, which, as the name suggests, checks the serial we input.
 
 Inside the function, we can see 8 bytes loaded into the stack frame and a counter initialized to `0x8`:
 
-[[easyjerk1.png]]
+<p align="center">
+<img src="/resources/easyjerk1.png" alt="Piece of disassembly with bytes"/>
+</p>
 
 If you convert these 8 bytes into a string, you get Xn\`k{Vfu. However, this is not the final password.
 
@@ -61,7 +65,9 @@ The result of running the script was: `bytearray(b'LiZTeETf')`
 
 Then I checked whether the password was correct — and it worked:
 
-[[easyjerk2.png]]
+<p align="center">
+<img src="/resources/easyjerk2.png" alt="The result with the correct password"/>
+</p>
 
 ## Conclusion
 
