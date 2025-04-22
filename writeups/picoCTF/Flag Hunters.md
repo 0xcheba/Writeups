@@ -6,8 +6,6 @@
 
 **Category:** *Reverse Engineering*
 
-**Author:** che6a
-
 
 
 ## **Description**

@@ -6,10 +6,8 @@
 
 **Difficulty:** *1.8*
 
-**Author:** che6a
 
-
-## Description (from ckarckme's author)
+## Description (from crackme's author)
 
 This is a simple CrackMe for Linux x86_64. The goal is to find the correct serial that allows access. No packers or anti-debug tricks are used. Compiled with GCC. Enjoy and good luck :)
 
