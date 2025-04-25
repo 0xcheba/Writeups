@@ -1,10 +1,10 @@
-# easyjerk writeup 
+# easyjerk - writeup 
 
 **Platform:** *crackmes.one*
 
-**Link:** https://www.crackmes.one/crackme/67fa22568f555589f3530a94
-
 **Difficulty:** *1.8*
+
+**Link:** https://www.crackmes.one/crackme/67fa22568f555589f3530a94
 
 
 ## Description (from crackme's author)
