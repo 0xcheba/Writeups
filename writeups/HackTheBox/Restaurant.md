@@ -48,7 +48,7 @@ The algorithm to reproduce the technique is:
 4. Return to any program function (I chose main) to avoid program crashing.
 5. Get the address of `puts` function in `libc.so.6`
 
-Here I found a "gadget" with `ROPgatgets --binary ./restaurant`:
+Here I found a "gadget" with `ROPgadgets --binary ./restaurant`:
 
 <p align="center">
 <img src="../resources/HackTheBox/Restaurant3.png" alt="pop rdi; ret gadget address"/>
