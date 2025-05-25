@@ -15,6 +15,8 @@ Lame is an easy Linux machine, requiring only one exploit to obtain root access.
 
 ## Solution
 
+### Enumreation
+
 First, I scanned the target host with `sudo nmap -sC 10.10.10.3`
 
 ```
@@ -76,6 +78,8 @@ The only share available via guest login was `tmp`. But there are no any interes
 <p align="center">
 <img src="../../resources/HackTheBox/Lame3.png" alt="Contents of tmp share"/>
 </p>
+
+### Gaining access
 
 Next, I checked whether any of the running service were vulnerable. So, I checked the vsFTPd 2.3.4 first. There is a Metasploit module available:
 
