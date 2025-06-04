@@ -8,7 +8,7 @@ This repository contains my personal writeups for various **CTF challenges**, **
 - Reverse engineering
 - Web exploitation
 - Privilege escalation
-- Network protocol exploitation
+- Network exploitation
 
 
 ## License
