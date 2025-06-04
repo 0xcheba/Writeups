@@ -1,6 +1,6 @@
 # Cap - Writeup
 
-**Platform:** *HackTheBox*
+**Platform:** *Hack The Box*
 
 **OS:** *Linux*
 
