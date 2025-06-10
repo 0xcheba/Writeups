@@ -1,4 +1,4 @@
-# Lame - Writeup
+# Lame — Writeup
 
 **Platform:** *Hack The Box*
 

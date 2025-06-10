@@ -1,4 +1,4 @@
-# Quack Quack - Writeup
+# Quack Quack — Writeup
 
 **Platform:** *Hack The Box*
 

@@ -1,4 +1,4 @@
-# easyjerk - writeup 
+# easyjerk — writeup
 
 **Platform:** *crackmes.one*
 

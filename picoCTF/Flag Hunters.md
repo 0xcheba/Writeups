@@ -1,4 +1,4 @@
-# **Flag Hunters Writeup**
+# **Flag Hunters — Writeup**
 
 **Platform:** *picoGym*
 

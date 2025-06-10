@@ -1,4 +1,4 @@
-# SpookyPass - Writeup
+# SpookyPass — Writeup
 
 **Platform:** *Hack The Box*
 

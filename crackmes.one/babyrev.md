@@ -1,4 +1,4 @@
-# babyrev - writeup
+# babyrev — writeup
 
 **Platform:** *crackmes.one*
 

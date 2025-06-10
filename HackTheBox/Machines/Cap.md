@@ -1,4 +1,4 @@
-# Cap - Writeup
+# Cap — Writeup
 
 **Platform:** *Hack The Box*
 
