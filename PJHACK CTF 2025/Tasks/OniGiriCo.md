@@ -10,7 +10,11 @@ A shop of a company selling onigiri that hides its secret ingredient. A "follow 
 
 I started from exploring the web page. But I did not find anything useful.
 Next, I enumerated directories using:
-`gobuster dir -u http://ip:port/ -w /usr/share/wordlists/dirb/common.txt`
+
+```Shell
+gobuster dir -u http://ip:port/ -w /usr/share/wordlists/dirb/common.txt
+```
+
 This revealed several interesting paths:
 
 <p align="center">
