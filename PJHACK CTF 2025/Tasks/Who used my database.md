@@ -12,7 +12,7 @@ I was given a `.pcapng` file with captured network traffic. There was a lot of i
 Next, I started to analyze packets starting from the end of dump. I quickly noticed that **HTTP POST** requests were unencrypted and I could read packet's content:
 
 <p align="center">
-<img src="../../../resources/PJHACK CTF 2025/database1.png" alt="Contents of the last packet"/>
+<img src="../../resources/PJHACK CTF 2025/database1.png" alt="Contents of the last packet"/>
 </p>
 
 Since encrypted traffic (HTTPS over TCP) would not help much here, I continued ignoring such packets.
@@ -20,27 +20,27 @@ As mentioned in the description, the flag consists of three parts: information f
 I started looking for this information from the end of file and found the third part of the flag:
 
 <p align="center">
-<img src="../../../resources/PJHACK CTF 2025/database2.png" alt="The third part"/>
+<img src="../../resources/PJHACK CTF 2025/database2.png" alt="The third part"/>
 </p>
 
 Next, I found a **GET** request where the attacker tried to access a suspicious-named directory. The directory name appeared to be the first part of the flag:
 
 <p align="center">
-<img src="../../../resources/PJHACK CTF 2025/database3.png" alt="The first part"/>
+<img src="../../resources/PJHACK CTF 2025/database3.png" alt="The first part"/>
 </p>
 
 The `%7B` is an URL encoded "{" character.
 The last part is the second part. To get the MAC address first I needed to find the dwarf's IP address. On the screenshot above there is a packet sent from the intruder's host to database server. Using the filter `ip.addr != 192.168.10.103 && !dhcp && !arp && !icmpv6`, I isolated traffic not originating from from the attacker. From this I found dwarf's IP address:
 
 <p align="center">
-<img src="../../../resources/PJHACK CTF 2025/database4.png" alt="dwarf's packets"/>
+<img src="../../resources/PJHACK CTF 2025/database4.png" alt="dwarf's packets"/>
 </p>
 
 The dwarf's IP is `192.168.10.102`.
 Then I located a packet sent from dwarf's IP and read the source MAC address:
 
 <p align="center">
-<img src="../../../resources/PJHACK CTF 2025/database5.png" alt="The second part"/>
+<img src="../../resources/PJHACK CTF 2025/database5.png" alt="The second part"/>
 </p>
 
 I combined three parts into the final flag:
