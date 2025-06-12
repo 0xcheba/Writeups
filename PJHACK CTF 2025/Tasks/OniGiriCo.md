@@ -71,7 +71,7 @@ The first message from `admin@onigirico.com` contained another reference to secr
 </p>
 
 Other messages were user comments.
-I noticed that the URL in this page had a `?file=` parameter followed by a base64-encoded string (`%3D` URL encoded "="):
+I noticed that the URL in this page had a `?file=` parameter followed by a base64-encoded string (`%3D` URL encoded `=`):
 
 <p align="center">
 <img src="../../resources/PJHACK CTF 2025/onigirico10.png" alt="How URL looks like"/>
