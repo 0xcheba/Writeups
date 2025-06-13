@@ -8,8 +8,11 @@ I also spent some time on two _reversing_ challenges — I didn’t finish one d
 
 In the end, I placed **4th** with **580 points**. While I wasn’t fully satisfied with my performance and felt I could have approached some tasks more effectively, it was a valuable learning experience and gave me extra motivation to keep improving — especially in reverse engineering.
 
-(eng) https://pja.edu.pl/znamy-zwyciezcow-pjhack-capture-the-flag-2025/
-(pl) https://pja.edu.pl/en/znamy-zwyciezcow-pjhack-capture-the-flag-2025/
+[Wersja polska](https://pja.edu.pl/znamy-zwyciezcow-pjhack-capture-the-flag-2025/)
+
+[English version](https://pja.edu.pl/en/znamy-zwyciezcow-pjhack-capture-the-flag-2025/)
+
+[Instagram](https://www.instagram.com/p/DKzXM0zNVAI/?igsh=MWJzcTBsbHBqc2xubg==)
 
 <p align="center">
 <img src="../resources/PJHACK CTF 2025/results.png" alt="The scoreboard"/>
