@@ -7,7 +7,7 @@
 I was given given a file containing the following text:
 
 <p align="center">
-<img src="../../resources/BCACTF 6.0/skibidi1.png" alt="The source file"/>
+<img src="../resources/BCACTF 6.0/skibidi1.png" alt="The source file"/>
 </p>
 
 It looked like a cipher or an esolang, so I started researching this using the file extension. I found these pages:  [GitHub](https://github.com/Gen-Alpha-Inc/skibidi-lang) and [esolang.org](https://esolangs.org/wiki/Gen_Alpha_Brainrot)
@@ -35,7 +35,7 @@ print(decode)
 This produced the following Brainfuck code:
 
 <p align="center">
-<img src="../../resources/BCACTF 6.0/skibidi2.png" alt="The Brainfuck code"/>
+<img src="../resources/BCACTF 6.0/skibidi2.png" alt="The Brainfuck code"/>
 </p>
 
 I used an online Brainfuck interpreter to run this code, which output the following string: `bcactf{516m4_516m4_0n_7h3_w411_wh0_15_7h3_5k181d1357_0f_7h`
