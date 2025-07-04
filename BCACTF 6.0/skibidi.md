@@ -42,4 +42,4 @@ I used an online Brainfuck interpreter to run this code, which output the follow
 
 It looked like a flag, it was missing the closing brace and the phrase was incomplete. Next, I looked for the whole phrase and found it here: [allpoetry.com]([https://allpoetry.com/poem/18007983-sigma-sigma-on-the-wall](https://allpoetry.com/poem/18007983-sigma-sigma-on-the-wall)...-by-Gigasigma)
 
-So, the final flag was: bcactf{516m4_516m4_0n_7h3_w411_wh0_15_7h3_5k181d1357_0f_7h3m_411}
+So, the final flag was: `bcactf{516m4_516m4_0n_7h3_w411_wh0_15_7h3_5k181d1357_0f_7h3m_411}`
