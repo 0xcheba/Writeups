@@ -9,6 +9,7 @@ This repository contains my personal writeups for various **CTF challenges**, **
 - Web exploitation
 - Privilege escalation
 - Network exploitation
+- Malware analysis
 
 
 ## License
