@@ -7,7 +7,7 @@
 A link to a webpage with a login form was provided. After attempting to log in, I was redirected to a page to "solve a CAPTHCA:
 
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy1.png" alt="Captcha task"/>
+<img src="../resources/DownUnderCTF 2025/Fishy1.png" alt="Captcha task"/>
 </p>
 
 This is a typical example of [ClickFix](https://www.group-ib.com/blog/clickfix-the-social-engineering-technique-hackers-use-to-manipulate-victims/) attack. The PowerShell cmdlet fetches additional data from the `../verify/script` endpoint, which contains a base64-encoded PowerShell script.
@@ -50,41 +50,41 @@ function Func3 {
 2. I decrypted the C2 IP address from step 1 of the malware description:
 
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy2.png" alt="Decrypted IP address"/>
+<img src="../resources/DownUnderCTF 2025/Fishy2.png" alt="Decrypted IP address"/>
 </p>
 
 3. I then filtered the traffic in the file using this IP address and found many TLS 1.3 encrypted packets:
 
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy3.png" alt="Some of the encrypted packets"/>
+<img src="../resources/DownUnderCTF 2025/Fishy3.png" alt="Some of the encrypted packets"/>
 </p>
 
 4. I didn't find anything useful here, but I noticed that some data that was marked as encrypted in the packets has the tail with bytes from step 3 of the malware description:
 
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy4.png" alt="The strange data"/>
+<img src="../resources/DownUnderCTF 2025/Fishy4.png" alt="The strange data"/>
 </p>
 
 5. So I tried to decrypt the data:
 
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy5.png" alt="Decrypted data"/>
+<img src="../resources/DownUnderCTF 2025/Fishy5.png" alt="Decrypted data"/>
 </p>
 
 6. After that I started to look for the possible flag and found the next packet:
 
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy6.png" alt="The possible flag packet"/>
+<img src="../resources/DownUnderCTF 2025/Fishy6.png" alt="The possible flag packet"/>
 </p>
 
 7. I decrypted the data and got a base64-encoded string, which turned out to be the flag:
 
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy7_0.png" alt="Decrypted bytes"/>
+<img src="../resources/DownUnderCTF 2025/Fishy7_0.png" alt="Decrypted bytes"/>
 </p>
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy7_1.png" alt="base64 string"/>
+<img src="../resources/DownUnderCTF 2025/Fishy7_1.png" alt="base64 string"/>
 </p>
 <p align="center">
-<img src="../../resources/DownUnderCTF 2025/Fishy7_2.png" alt="The flag"/>
+<img src="../resources/DownUnderCTF 2025/Fishy7_2.png" alt="The flag"/>
 </p>
