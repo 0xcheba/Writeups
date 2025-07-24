@@ -175,4 +175,4 @@ Following a recent report of a data breach at their company, the client submitte
 
 ## Additional information
 
-For more details you can visit the following page: https://any.run/report/12daa34111bb54b3dcbad42305663e44e7e6c3842f015cccbbe6564d9dfd3ea3/4ee3ef19-6458-4ef1-aa97-b899b418d227
+For more details, you can visit the following page: https://any.run/report/12daa34111bb54b3dcbad42305663e44e7e6c3842f015cccbbe6564d9dfd3ea3/4ee3ef19-6458-4ef1-aa97-b899b418d227

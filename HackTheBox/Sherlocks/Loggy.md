@@ -112,4 +112,4 @@ Janice from accounting is beside herself! She was contacted by the SOC to tell h
 
 # Additional information
 
-For more details you can visit the following page: https://any.run/report/6acd8a362def62034cbd011e6632ba5120196e2011c83dc6045fcb28b590457c/0d9375af-6201-43ab-a490-4a7a89eefb94
+For more details, you can visit the following page: https://any.run/report/6acd8a362def62034cbd011e6632ba5120196e2011c83dc6045fcb28b590457c/0d9375af-6201-43ab-a490-4a7a89eefb94
