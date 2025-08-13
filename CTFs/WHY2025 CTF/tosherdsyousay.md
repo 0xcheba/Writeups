@@ -11,12 +11,8 @@ I bought a new shredder and I just tested it. I think it does a decent job, I ma
 There was a `.pdf` file provided. The file had a photo of a shredded piece of paper with data.
 First, I converted the `.pdf` to `.png` for easier editing:
 
-<p align="center">
-<img src="../resources/WHY2025 CTF/toshredyousay1.png"/>
-</p>
+![](toshredyousay1.png)
 
 Since I couldn't rearrange the physically, I used `GIMP` to cut and digitally move them. After that I got the flag:
 
-<p align="center">
-<img src="../resources/WHY2025 CTF/toshredyousay2.png"/>
-</p>
+![](toshredyousay2.png)
