@@ -4,12 +4,13 @@ This repository contains my personal writeups for various **CTF challenges**, **
 
 ## Topics covered
 - Linux & Windows machines
+- Malware analysis
+- Forensics
 - Binary exploitation
 - Reverse engineering
 - Web exploitation
 - Privilege escalation
 - Network exploitation
-- Malware analysis
 
 
 ## License
