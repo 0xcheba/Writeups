@@ -8,14 +8,14 @@ I bought a new shredder and I just tested it. I think it does a decent job, I ma
 
 ## Solution
 
-There was a `.pdf` file provided. This file had a photo of shredded piece of paper with data.
-First, I converted this `.pdf` to `.png` to be able to edit it:
+There was a `.pdf` file provided. The file had a photo of a shredded piece of paper with data.
+First, I converted the `.pdf` to `.png` for easier editing:
 
 <p align="center">
 <img src="../resources/WHY2025 CTF/toshredyousay1.png"/>
 </p>
 
-I wasn't able to move pieces physically, so I used `GIMP` to cut and move them. Some time ago I did this and got the flag:
+Since I couldn't rearrange the physically, I used `GIMP` to cut and digitally move them. After that I got the flag:
 
 <p align="center">
 <img src="../resources/WHY2025 CTF/toshredyousay2.png"/>
