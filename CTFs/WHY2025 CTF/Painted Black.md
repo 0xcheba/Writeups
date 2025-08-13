@@ -20,7 +20,7 @@ The first interesting thing I found was the VBA script (`./word/vbaProject.bin`)
 
 Here I noticed that the script encrypts/decrypts the selected text with `0x7B` byte and the lowercased username of the person who created the file, without spaces and starting with the second byte. So I looked for the username and found it in the `./docProps/core.xml` file:
 
-![the username of file author](../resources/WHY2025%20CTF/paintedblack3.png)
+![The username of file author](../resources/WHY2025%20CTF/paintedblack3.png)
 
 After processing the encrypted text using the extracted username, I recovered the flag:
 
