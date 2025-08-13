@@ -11,12 +11,8 @@ I bought a new shredder and I just tested it. I think it does a decent job, I ma
 There was a `.pdf` file provided. This file had a photo of shredded piece of paper with data.
 First, I converted this `.pdf` to `.png` to be able to edit it:
 
-<p align="center">
-<img src="../resources/WHY2025 CTF/toshredyousay1.png"/>
-</p>
+![toshredyousay][toshredyousay1.png]
 
 I wasn't able to move pieces physically, so I used `GIMP` to cut and move them. Some time ago I did this and got the flag:
 
-<p align="center">
-<img src="../resources/WHY2025 CTF/toshredyousay2.png"/>
-</p>
+![toshredyousay][toshredyousay2.png]
